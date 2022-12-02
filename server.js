@@ -6,9 +6,9 @@ const fs = require("fs");
 const https = require("https");
 
 const options = {
-    key: fs.readFileSync('/etc/letsencrypt/live/verify.owc.leoflt.com/privkey.pem'),
-    cert: fs.readFileSync('/etc/letsencrypt/live/verify.owc.leoflt.com/cert.pem'),
-    ca: fs.readFileSync('/etc/letsencrypt/live/verify.owc.leoflt.com/chain.pem')
+    key: fs.readFileSync('/path/to/cert/key'),
+    cert: fs.readFileSync('/path/to/cert/file'),
+    ca: fs.readFileSync('/path/to/cert/chain')
 };
 
 const app = new Koa();
